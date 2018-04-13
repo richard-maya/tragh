@@ -1,0 +1,22 @@
+/* COLORS
+----------------------*/
+$tragh-green: #48A018;
+$tragh-red: #E2001D;
+$tragh-yellow: #FFD800;
+$tragh-blue: #00187D;
+$tragh-orange: #FF5000;
+
+
+/* MIXINS & FUNCTIONS
+----------------------*/
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin transition($time){
+    transition: all $time ease-out;
+}

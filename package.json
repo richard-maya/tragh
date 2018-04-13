@@ -29,6 +29,7 @@
     "font-awesome": "^4.7.0",
     "hover.css": "^2.3.0",
     "jquery": "^3.3.1",
+    "ng2-page-scroll": "^4.0.0-beta.12",
     "ngx-wow": "^1.0.2",
     "popper.js": "^1.14.3",
     "rxjs": "^5.5.2",

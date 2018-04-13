@@ -1,11 +1,101 @@
 /* IMPORTS
 ----------------------*/
+@import "assets/global-vars.scss";
 @import "././node_modules/bootstrap/scss/bootstrap.scss";
 @import "././node_modules/modularscale-sass/libsass/scss/main.scss";
 @import "././node_modules/animate.css/animate.min";
 @import "././node_modules/hover.css/scss/hover.scss";
 @import "././node_modules/font-awesome/scss/font-awesome.scss";
 
+
+/* TYPOGRAPHY & SPACING
+----------------------*/
+@font-face {
+    font-family: 'Muller-Thin';
+    src:url('assets/muller-font/Muller-Thin-DEMO.ttf.woff') format('woff'),
+        url('assets/muller-font/Muller-Thin-DEMO.ttf.svg#Muller-Thin-DEMO') format('svg'),
+        url('assets/muller-font/Muller-Thin-DEMO.ttf.eot'),
+        url('assets/muller-font/Muller-Thin-DEMO.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext');
+
 .fab, .far, .fas, .fal{
     font-family: 'FontAwesome';
+}
+
+$fontType: p, h6, h5, h4, h3, h2, h1;
+
+$modularscale: (
+    base: 1rem,
+    ratio: $minor-third
+);
+
+@for $i from 1 through 7{
+    #{ nth($fontType, $i) }{
+        font-size: ms($i);
+        @if $i == 1 {
+            font-family: 'Montserrat', sans-serif;
+        } @else {
+            font-family: 'Muller-Thin';
+        }
+    }
+}
+
+$section-space: ms(3);
+$footer-space: ms(0);
+
+
+/* BUTTONS
+----------------------*/
+button.btn{
+    // border-radius: 2rem;
+    font-family: 'Muller-Thin';
+    font-size: ms(2);
+
+    &.not-allowed {
+        cursor: not-allowed;
+    }
+}
+.btn-tragh{
+    background-color: lighten(black, 20%);
+    border-color: lighten(black, 20%);
+    color: white;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        // color: white;
+        background-color: black;
+        border-color: black;
+    }
+}
+.btn-tragh-outline{
+    background-color: rgba(0,0,0,0);
+    border-color: black;
+    color: black;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: white;
+        background-color: rgba(0,0,0,1);
+        border-color: black;
+    }
+}
+
+
+/* GENERAL LAYOUT
+----------------------*/
+section{
+    &.hero{
+        width: 100%;
+        height: 100vh;
+    }
+    &:not(.hero){
+        padding: $section-space 0px;
+    }
+}
+
+nav.navbar{
+    font-family: 'Muller-Thin';
 }
