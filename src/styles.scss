@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* IMPORTS
+----------------------*/
+@import "././node_modules/bootstrap/scss/bootstrap.scss";
+@import "././node_modules/modularscale-sass/libsass/scss/main.scss";
+@import "././node_modules/animate.css/animate.min";
+@import "././node_modules/hover.css/scss/hover.scss";
+@import "././node_modules/font-awesome/scss/font-awesome.scss";
+
+.fab, .far, .fas, .fal{
+    font-family: 'FontAwesome';
+}
