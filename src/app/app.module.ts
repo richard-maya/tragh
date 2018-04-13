@@ -5,9 +5,13 @@ import { HttpModule } from '@angular/http';
 // PlugIns
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgwWowModule } from "ngx-wow";
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 // Routes
 import { app_routing } from './app.routes';
+
+// Services
+import { InfoService } from './services/info.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -46,11 +50,14 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
   imports: [
     BrowserModule,
     HttpModule,
+    Ng2PageScrollModule,
     app_routing,
     NgwWowModule.forRoot(),
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [
+      InfoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

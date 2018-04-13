@@ -6,9 +6,141 @@
             <h1 class="display-1 text-center">¡Adéntrate en lo Asombroso!</h1>
         </div>
         <div class="row justify-content-center">
-            <a href="">
+            <a pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" href="#services">
                 <button class="btn btn-tragh btn-lg hvr-grow">conoce más</button>
             </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- CATÁLOGO DE SERVICIOS
+================================================== -->
+<section id="services">
+    <div class="container">
+        <div class="row justify-content-between my-3">
+            <div class="col-12 col-md-3 text-center">
+                <div class="hexagon hvr-radial-out">
+                    <a [routerLink]="['/servicios','trainer']">
+                        <h3>trainer</h3>
+                    </a>
+                </div>
+                <a [routerLink]="['/servicios','trainer']">ver más</a>
+            </div>
+            <div class="col-12 col-md-3">
+                <h2 class="text-center">Catálogo de Servicios</h2>
+            </div>
+            <div class="col-12 col-md-3 text-center">
+                <div class="hexagon hvr-radial-out">
+                    <a [routerLink]="['/servicios','events']">
+                        <h3>events</h3>
+                    </a>
+                </div>
+                <a [routerLink]="['/servicios','events']">ver más</a>
+            </div>
+        </div>
+        <div class="row justify-content-center my-3">
+            <div class="col-12 col-md-3 text-center">
+                <div class="hexagon hvr-radial-out">
+                    <a [routerLink]="['/servicios','consultant']">
+                        <h3>consultant</h3>
+                    </a>
+                </div>
+                <a [routerLink]="['/servicios','consultant']">ver más</a>
+            </div>
+            <div class="col-12 col-md-3 text-center">
+                <div class="hexagon hvr-radial-out">
+                    <a [routerLink]="['/servicios','entrepreneur']">
+                        <h3>entrepreneur</h3>
+                    </a>
+                </div>
+                <a [routerLink]="['/servicios','entrepreneur']">ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SISTEMA TRAGH
+================================================== -->
+<section id="system">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-end mb-5">
+            <div class="col-12 col-md-4">
+                <h2 class="display-3">SISTEMA TRAGH</h2>
+            </div>
+            <div class="col-12 col-md-8">
+                <p>Cada una de las áreas y los servicios que ofrece, opera con el siguiente procedimiento:</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="flip-container col-12 col-md-2" id="fase-1">
+            	<div class="flipper">
+            		<div class="front">
+                        <h3>FASE 1</h3>
+                        <p>consulta</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Detectar causas y síntomas.</p>
+                        <i class="fas fa-stethoscope"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col-12 col-md-2" id="fase-2">
+            	<div class="flipper">
+            		<div class="front">
+                        <h3>FASE 2</h3>
+                        <p>afección</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Identificar la problemática.</p>
+                        <i class="fas fa-search"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col-12 col-md-2" id="fase-3">
+            	<div class="flipper">
+            		<div class="front">
+                        <h3>FASE 3</h3>
+                        <p>laboratorio</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Desarrollar el programa del servicio (cura).</p>
+                        <i class="fas fa-flask"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col-12 col-md-2" id="fase-4">
+            	<div class="flipper">
+            		<div class="front">
+                        <h3>FASE 4</h3>
+                        <p>tratamiento</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Impartir servicio personalizado.</p>
+                        <!-- <i class="fas fa-pills"></i> -->
+                        <i class="fas fa-ambulance"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col-12 col-md-2" id="fase-5">
+            	<div class="flipper">
+            		<div class="front">
+                        <h3>FASE 5</h3>
+                        <p>seguimiento</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Evaluar el impacto del servicio.</p>
+                        <i class="fas fa-user-md"></i>
+            		</div>
+            	</div>
+            </div>
         </div>
     </div>
 </section>

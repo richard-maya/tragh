@@ -1,3 +1,74 @@
-<p>
-  footer works!
-</p>
+<!-- FOOTER
+================================================== -->
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <ul class="list-inline text-center">
+                    <a [routerLink]="['/inicio']">
+                        <li class="list-inline-item mx-3">inicio</li>
+                    </a>
+                    <a class="dropup">
+                        <li class="list-inline-item mx-3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">servicios</li>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" [routerLink]="['/servicios','trainer']">Trainer</a>
+                            <a class="dropdown-item" [routerLink]="['/servicios','consultant']">Consultant</a>
+                            <a class="dropdown-item" [routerLink]="['/servicios','entrepreneur']">Entrepreneur</a>
+                            <a class="dropdown-item" [routerLink]="['/servicios','events']">Events</a>
+                        </div>
+                    </a>
+                    <a [routerLink]="['/comunidad']">
+                        <li class="list-inline-item mx-3">comunidad</li>
+                    </a>
+                    <a [routerLink]="['/acerca']">
+                        <li class="list-inline-item mx-3">acerca</li>
+                    </a>
+                    <a [routerLink]="['/contacto']">
+                        <li class="list-inline-item mx-3">contacto</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center my-1">
+            <div class="col-12 col-md-6">
+                <ul class="list-inline text-center">
+                    <a [href]="_is.info.facebook" target="_blank" rel="external">
+                        <li class="list-inline-item mx-3"><i class="fab fa-facebook-f fa-2x"></i></li>
+                    </a>
+                    <a [href]="_is.info.twitter" target="_blank" rel="external">
+                        <li class="list-inline-item mx-3"><i class="fab fa-twitter fa-2x"></i></li>
+                    </a>
+                    <a [href]="_is.info.instagram" target="_blank" rel="external">
+                        <li class="list-inline-item mx-3"><i class="fab fa-instagram fa-2x"></i></li>
+                    </a>
+                    <a [href]="_is.info.youtube" target="_blank" rel="external">
+                        <li class="list-inline-item mx-3"><i class="fab fa-youtube fa-2x"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-between" id="copyright">
+            <div class="col-12 col-md-8">
+                <p><span>&copy;</span> {{ anio }} TRAGH. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class="list-inline text-right">
+                    <a [routerLink]="['/privacidad']">
+                        <li class="list-inline-item">Aviso de Privacidad</li>
+                    </a>
+                    <a [routerLink]="['/sitemap']">
+                        <li class="list-inline-item ml-3">Mapa del Sitio</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" id="developer">
+            <div class="col">
+                <p class="text-center">Desarrollado por <a [href]="_is.info.developerSite" target="_blank" rel="author">{{ _is.info.developer }}</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
