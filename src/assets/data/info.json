@@ -1,9 +1,10 @@
 {
     "email": "atencion@tragh.mx",
-    "phone": "55-8531-4543",
-    "address1": "Calle Euler 149, Col. Polanco",
-    "address2": "Del. Miguel Hidalgo, Cd. de México",
-    "zipCode": "11560",
+    "phone": "6-88-52-45",
+    "cel": "7224988872",
+    "address1": "Calle San Andrés mz 40 lote 3 B, Real de San Pablo",
+    "address2": "Del. San Diego Linares, Toluca",
+    "zipCode": "50206",
     "country": "México",
     "days": "Lunes a Sábado",
     "open": "7:00am",
@@ -14,5 +15,5 @@
     "instagram": "https://www.instagram.com/hazloasombroso/",
     "twitter": "https://twitter.com/HazloAsombroso",
     "youtube": "https://www.youtube.com/channel/UCcUKA5V4JrenT_FE0SrfUhA?sub_confirmation=1",
-    "map": "https://www.google.com/maps/place/Euler+149,+Polanco,+Polanco+V+Secc,+11560+Ciudad+de+M%C3%A9xico,+CDMX/@19.432617,-99.183072,17z/data=!4m5!3m4!1s0x85d1f8acea91f9d5:0x9f799d5de3286fb4!8m2!3d19.4326315!4d-99.1830617?hl=en-US"
+    "map": "https://www.google.com/maps/search/Calle+San+Andr%C3%A9s+mz+40+lote+3+B,+Real+de+San+Pablo+Del.+San+Diego+Linares,+Toluca+50206,+M%C3%A9xico/@19.3827163,-99.6401832,17z?hl=en"
 }

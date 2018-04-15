@@ -19,7 +19,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700&subset=latin-ext');
 
 .fab, .far, .fas, .fal{
     font-family: 'FontAwesome';
@@ -37,15 +37,11 @@ $modularscale: (
 @for $i from 1 through 7{
     #{ nth($fontType, $i) }{
         font-size: ms($i);
-        @if $i == 1 {
-            font-family: 'Montserrat', sans-serif;
-        } @else {
-            font-family: 'Muller-Thin';
-        }
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
-$section-space: ms(3);
+$section-space: ms(4);
 $footer-space: ms(1);
 
 
@@ -74,13 +70,13 @@ button.btn{
 }
 .btn-tragh-outline{
     background-color: rgba(0,0,0,0);
-    border-color: black;
-    color: black;
+    border-color: white;
+    color: white;
     @include transition(0.5s);
 
     &:hover, &:focus, &.focus, &:active, &.active{
-        color: white;
-        background-color: rgba(0,0,0,1);
+        color: black;
+        background-color: rgba(255,255,255,1);
         border-color: black;
     }
 }
@@ -100,6 +96,12 @@ section{
 
 nav.navbar{
     font-family: 'Muller-Thin';
+    background-color: black !important;
+    font-size: ms(1);
+
+    ul.navbar-nav{
+        width: 100%;
+    }
 }
 
 footer{
@@ -128,7 +130,7 @@ footer{
 
         span{
             font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
+            font-weight: 200;
         }
     }
 
@@ -157,6 +159,10 @@ footer{
 }
 
 section#services{
+    h2{
+        font-size: ms(5);
+        font-weight: 200;
+    }
     a{
         font-family: 'Muller-Thin';
         color: black;
@@ -167,6 +173,7 @@ section#services{
 section#system{
     h2{
         color: $tragh-red;
+        font-weight: 700;
     }
 
     a{
@@ -193,7 +200,7 @@ section#system{
         }
 
         p{
-            font-family: 'Muller-Thin';
+            font-weight: 200;
         }
 
         &:hover .flipper, &.hover .flipper{
@@ -225,6 +232,7 @@ section#system{
                 p{
                     font-family: 'Montserrat', sans-serif;
                     font-size: ms(1);
+                    font-weight: 400;
                 }
 
                 i{
@@ -252,6 +260,161 @@ section#system{
                     background-color: darken(nth($phaseColor, $i), 10%);
                 }
             }
+        }
+    }
+}
+
+
+/* SERVICES
+----------------------*/
+section.tragh-services{
+    h1,h2{
+        font-weight: 700;
+    }
+    h1{
+        font-size: ms(5);
+    }
+    h2{
+        font-size: ms(8);
+        font-style: oblique;
+    }
+    p{
+        font-weight: 200;
+        font-size: ms(0);
+    }
+    #right-side{
+        color: white;
+        height: 100vh;
+    }
+}
+section#trainer{
+    h2{
+        color: $tragh-red;
+    }
+    #right-side{
+        background-color: $tragh-red;
+    }
+}
+section#consultant{
+    h2{
+        color: $tragh-orange;
+    }
+    #right-side{
+        background-color: $tragh-orange;
+    }
+}
+section#entrepreneur{
+    h2{
+        color: $tragh-green;
+    }
+    #right-side{
+        background-color: $tragh-green;
+    }
+}
+section#events{
+    h2{
+        color: $tragh-blue;
+    }
+    #right-side{
+        background-color: $tragh-blue;
+    }
+}
+.modal-body{
+    h6{
+        font-size: ms(1);
+        margin-left: -ms(1);
+        margin-bottom: ms(-1);
+        margin-top: ms(0);
+
+        &:first-child{
+            margin-top: 0px;
+        }
+    }
+    p{
+        font-weight: 200;
+    }
+    li{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+}
+
+
+/* OTHERS
+----------------------*/
+section#community{
+    background-color: black;
+    color: white;
+    h1{
+        color: $tragh-yellow;
+        font-size: ms(6);
+        font-style: oblique;
+    }
+    .fb-page{
+        width: 100%;
+    }
+}
+section#about{
+    h1{
+        font-size: ms(9);
+    }
+    h2{
+        font-size: ms(6);
+        font-style: normal;
+    }
+    #right-side{
+        background-color: $tragh-blue;
+    }
+}
+section.philosophy-box{
+    h1,h2,h3{
+        font-weight: 700;
+    }
+    h2{
+        font-size: ms(7);
+    }
+    a{
+        color: white;
+        @include transition(0.3s);
+        &:hover{
+            color: darken($tragh-orange, 15%);
+        }
+    }
+    p{
+        font-weight: 200;
+        font-size: ms(0);
+    }
+    #left-side{
+        color: white;
+        height: 100vh;
+        background-color: $tragh-orange;
+    }
+    #values{
+        columns: 2;
+        p{
+            font-size: ms(2);
+            font-weight: 200;
+        }
+        i{
+            font-style: normal;
+        }
+    }
+}
+section#contact{
+    h1{
+        font-size: ms(8);
+    }
+    #right-side{
+        color: black;
+        background-color: $tragh-yellow;
+        i{
+            font-style: normal;
+        }
+        a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: ms(0);
+            color: black;
         }
     }
 }
