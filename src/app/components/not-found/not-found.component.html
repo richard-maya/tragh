@@ -1,3 +1,29 @@
-<p>
-  not-found works!
-</p>
+<!-- NOT FOUND
+================================================== -->
+<section id="not-found" class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8">
+                <img src="assets/img/tragh-logo.png" alt="tragh-logo" class="img-fluid mb-5">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <h2 class="orange-text">Ooops, <small>Página no Encontrada :(</small></h2>
+            <div class="col-12 col-md-8 text-center mb-4">
+                <p>Lo sentimos pero la página que estás buscando no existe o fue removida. Puedes intentar buscando en el mapa del sitio o volver al inicio.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-md-3 text-center">
+                <a [routerLink]="['/inicio']">
+                    <button class="btn btn-tragh hvr-grow">inicio</button>
+                </a>
+            </div>
+            <div class="col col-md-3 text-center">
+                <a [routerLink]="['/sitemap']">
+                    <button class="btn btn-tragh hvr-grow">mapa del sitio</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

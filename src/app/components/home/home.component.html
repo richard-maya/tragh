@@ -1,6 +1,23 @@
 <!-- INTRO
 ================================================== -->
-<section id="intro" class="hero d-flex align-items-center">
+<section id="intro" class="align-items-center d-flex d-lg-none">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center" id="logo">
+            <div class="col-6">
+                <img src="assets/img/tragh-white-logo.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row justify-content-center d-flex align-items-center my-5" id="cta">
+            <div class="text-center">
+                <img src="assets/img/slogan.png" alt="" class="img-fluid mb-3 w-75" data-wow-delay="0.1s"> <br>
+                <a pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" href="#services-mobile">
+                    <button class="btn btn-tragh btn-sm hvr-grow wow fadeInUp" data-wow-delay="0.2s">conoce más</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="intro" class="hero align-items-center d-none d-lg-flex">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 col-md-4 d-flex align-items-center" id="left-side">
@@ -8,7 +25,7 @@
             </div>
             <div class="col-12 col-md-8 d-flex align-items-center px-3" id="right-side">
                 <div class="text-center">
-                    <h1 class="display-1 text-center wow fadeIn" data-wow-delay="1s">¡Adéntrate en lo Asombroso!</h1>
+                    <img src="assets/img/slogan.png" alt="" class="img-fluid mb-5" data-wow-delay="1s">
                     <a pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" href="#services">
                         <button class="btn btn-tragh btn-lg hvr-grow wow fadeInUp" data-wow-delay="2s">conoce más</button>
                     </a>
@@ -21,12 +38,45 @@
 
 <!-- CATÁLOGO DE SERVICIOS
 ================================================== -->
-<section id="services">
+<section id="services-mobile" class="d-block d-md-none">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="wow fadeInUp text-center">CATÁLOGO DE SERVICIOS</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
+                    <img src="assets/img/hex-1.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn w-75">
+                </a> <br>
+                <a [routerLink]="['/servicios','trainer']" class="my-3">ver más</a>
+            </div>
+            <div class="col-12 text-center">
+                <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
+                    <img src="assets/img/hex-2.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn w-75">
+                </a> <br>
+                <a [routerLink]="['/servicios','trainer']" class="my-3">ver más</a>
+            </div>
+            <div class="col-12 text-center">
+                <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
+                    <img src="assets/img/hex-3.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn w-75">
+                </a> <br>
+                <a [routerLink]="['/servicios','trainer']" class="my-3">ver más</a>
+            </div>
+            <div class="col-12 text-center">
+                <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
+                    <img src="assets/img/hex-4.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn w-75">
+                </a> <br>
+                <a [routerLink]="['/servicios','trainer']" class="my-3">ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="d-none d-md-block">
     <div class="container">
         <div class="row justify-content-between d-flex align-items-center mt-5">
             <div class="col-12 col-md-3 text-center">
                 <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
-                    <img src="assets/img/hex-1.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="0.5s">
+                    <img src="assets/img/hex-1.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="0.1s">
                 </a>
                 <a [routerLink]="['/servicios','trainer']" class="mt-3">ver más</a>
             </div>
@@ -35,7 +85,7 @@
             </div>
             <div class="col-12 col-md-3 text-center">
                 <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
-                    <img src="assets/img/hex-1.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="2s">
+                    <img src="assets/img/hex-4.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="0.4s">
                 </a>
                 <a [routerLink]="['/servicios','events']" class="mt-3">ver más</a>
             </div>
@@ -43,13 +93,13 @@
         <div class="row justify-content-center mb-3">
             <div class="col-12 col-md-3 text-center">
                 <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
-                    <img src="assets/img/hex-1.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="1s">
+                    <img src="assets/img/hex-2.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="0.2s">
                 </a>
                 <a [routerLink]="['/servicios','consultant']" class="mt-3">ver más</a>
             </div>
             <div class="col-12 col-md-3 offset-md-1 text-center">
                 <a [routerLink]="['/servicios','trainer']" title="tragh-trainer">
-                    <img src="assets/img/hex-1.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="1.5s">
+                    <img src="assets/img/hex-3.png" alt="tragh-trainer" class="img-fluid hvr-grow-rotate wow fadeIn" data-wow-delay="0.3s">
                 </a>
                 <a [routerLink]="['/servicios','entrepreneur']" class="mt-3">ver más</a>
             </div>
@@ -60,14 +110,15 @@
 
 <!-- SISTEMA TRAGH
 ================================================== -->
-<section id="system">
+<section id="system" class="d-block d-md-none d-lg-block">
     <div class="container">
         <div class="row d-flex justify-content-center align-items-end mb-5">
             <div class="col-12 col-md-4">
-                <h2 class="display-3 wow fadeInLeft">SISTEMA TRAGH</h2>
+                <h2 class="display-3 wow fadeInLeft d-none d-lg-block">SISTEMA TRAGH</h2>
+                <h2 class="wow fadeInLeft d-block d-lg-none">SISTEMA TRAGH</h2>
             </div>
             <div class="col-12 col-md-8">
-                <p class="wow fadeInUp" data-wow-delay="0.5s">Cada una de las áreas y los servicios que ofrece, opera con el siguiente procedimiento:</p>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Cada una de las áreas y los servicios que ofrece, opera con el siguiente procedimiento:</p>
             </div>
         </div>
 
@@ -86,7 +137,7 @@
             	</div>
             </div>
             <div class="flip-container col-12 col-md-2" id="fase-2">
-            	<div class="flipper wow fadeIn" data-wow-delay="0.5s">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.1s">
             		<div class="front">
                         <h3>FASE 2</h3>
                         <p>afección</p>
@@ -99,7 +150,7 @@
             	</div>
             </div>
             <div class="flip-container col-12 col-md-2" id="fase-3">
-            	<div class="flipper wow fadeIn" data-wow-delay="1s">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.2s">
             		<div class="front">
                         <h3>FASE 3</h3>
                         <p>laboratorio</p>
@@ -112,7 +163,7 @@
             	</div>
             </div>
             <div class="flip-container col-12 col-md-2" id="fase-4">
-            	<div class="flipper wow fadeIn" data-wow-delay="1.5s">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.3s">
             		<div class="front">
                         <h3>FASE 4</h3>
                         <p>tratamiento</p>
@@ -125,7 +176,88 @@
             	</div>
             </div>
             <div class="flip-container col-12 col-md-2" id="fase-5">
-            	<div class="flipper wow fadeIn" data-wow-delay="2s">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.4s">
+            		<div class="front">
+                        <h3>FASE 5</h3>
+                        <p>seguimiento</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Evaluar el impacto del servicio.</p>
+                        <i class="fas fa-user-md"></i>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="system" class="d-none d-md-block d-lg-none">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-end mb-5">
+            <div class="col-12 col-md-4">
+                <h2 class="display-3 wow fadeInLeft d-none d-lg-block">SISTEMA TRAGH</h2>
+                <h2 class="wow fadeInLeft d-block d-lg-none">SISTEMA TRAGH</h2>
+            </div>
+            <div class="col-12 col-md-8">
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Cada una de las áreas y los servicios que ofrece, opera con el siguiente procedimiento:</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="flip-container col" id="fase-1">
+            	<div class="flipper wow fadeIn">
+            		<div class="front">
+                        <h3>FASE 1</h3>
+                        <p>consulta</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Detectar causas y síntomas.</p>
+                        <i class="fas fa-stethoscope"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col" id="fase-2">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.1s">
+            		<div class="front">
+                        <h3>FASE 2</h3>
+                        <p>afección</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Identificar la problemática.</p>
+                        <i class="fas fa-search"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col" id="fase-3">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.2s">
+            		<div class="front">
+                        <h3>FASE 3</h3>
+                        <p>laboratorio</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Desarrollar el programa del servicio (cura).</p>
+                        <i class="fas fa-flask"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col" id="fase-4">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.3s">
+            		<div class="front">
+                        <h3>FASE 4</h3>
+                        <p>tratamiento</p>
+                        <i class="fas fa-plus-circle"></i>
+            		</div>
+            		<div class="back">
+                        <p>Impartir servicio personalizado.</p>
+                        <i class="fas fa-ambulance"></i>
+            		</div>
+            	</div>
+            </div>
+            <div class="flip-container col" id="fase-5">
+            	<div class="flipper wow fadeIn" data-wow-delay="0.4s">
             		<div class="front">
                         <h3>FASE 5</h3>
                         <p>seguimiento</p>
@@ -148,7 +280,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <a [href]="_is.info.twitterHashtag" target="_blank" rel="external">
-                <h1 class="display-1 my-5 py-5 wow zoomIn">#HazloAsombroso</h1>
+                <h1 class="my-5 py-5 wow zoomIn d-block d-lg-none">#HazloAsombroso</h1>
+                <h1 class="display-1 my-5 py-5 wow zoomIn d-none d-lg-block">#HazloAsombroso</h1>
             </a>
         </div>
     </div>

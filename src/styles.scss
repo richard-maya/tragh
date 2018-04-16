@@ -149,6 +149,25 @@ footer{
 
 /* HOME
 ----------------------*/
+@include media-breakpoint-down(md) {
+    section#intro{
+        #logo{
+            color: white;
+            height: 50vh;
+            background-color: black;
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    h1{
+        font-size: ms(8);
+    }
+}
+@include media-breakpoint-only(xs){
+    h1{
+        font-size: ms(4);
+    }
+}
 section#intro{
     #left-side{
         color: white;
@@ -157,7 +176,22 @@ section#intro{
     }
 }
 
-section#services{
+@include media-breakpoint-down(sm){
+    section#services-mobile{
+        h2{
+            font-size: ms(4);
+        }
+    }
+}
+@include media-breakpoint-only(md){
+    section#services-mobile{
+        h2{
+            font-size: ms(3);
+        }
+    }
+}
+section#services,
+section#services-mobile{
     h2{
         font-size: ms(5);
         font-weight: 400;
@@ -169,6 +203,32 @@ section#services{
     }
 }
 
+@include media-breakpoint-down(sm){
+    section#system{
+        h2{
+            font-size: ms(7);
+        }
+    }
+}
+@include media-breakpoint-only(md){
+    section#system{
+        h2{
+            font-size: ms(6);
+        }
+        .flip-container{
+            h3{
+                font-size: ms(3);
+            }
+            p{
+                font-size: ms(-1);
+            }
+
+            i{
+                font-size: ms(2);
+            }
+        }
+    }
+}
 section#system{
     h2{
         color: $tragh-red;
@@ -263,18 +323,32 @@ section#system{
     }
 }
 
+@include media-breakpoint-down(sm){
+    section#hashtag{
+        h1{
+            font-size: ms(4);
+        }
+    }
+}
+@include media-breakpoint-only(md){
+    section#hashtag{
+        h1{
+            font-size: ms(7);
+        }
+    }
+}
 section#hashtag{
     h1{
         // background-image: linear-gradient(to top, black, white);
         // color:transparent;
         // -webkit-background-clip: text;
         // background-clip: text;
+        font-family: 'Montserrat', sans-serif;
         color: lighten(black, 20%);
         @include transition(0.3s);
         &:hover{
             color: black;
             letter-spacing: 0.15rem;
-            // @include transition(0.3s);
         }
     }
     a:hover{
@@ -285,6 +359,39 @@ section#hashtag{
 
 /* SERVICES
 ----------------------*/
+@include media-breakpoint-down(sm){
+    section.tragh-services{
+        h2{
+            font-size: ms(4) !important;
+        }
+        p{
+            font-size: ms(-1) !important;
+        }
+        &#entrepreneur{
+            h1{
+                font-style: ms(3) !important;
+            }
+            h2{
+                font-style: ms(2) !important;
+            }
+        }
+    }
+}
+@include media-breakpoint-only(md){
+    section.tragh-services{
+        h2{
+            font-size: ms(6) !important;
+        }
+        &#entrepreneur{
+            h1{
+                font-style: ms(4) !important;
+            }
+            h2{
+                font-style: ms(3) !important;
+            }
+        }
+    }
+}
 section.tragh-services{
     h1,h2{
         font-weight: 700;
@@ -304,12 +411,16 @@ section.tragh-services{
         color: white;
         height: 100vh;
     }
+    #description{
+        color: white;
+    }
 }
 section#trainer{
     h2{
         color: $tragh-red;
     }
-    #right-side{
+    #right-side,
+    #description{
         background-color: $tragh-red;
     }
 }
@@ -317,7 +428,8 @@ section#consultant{
     h2{
         color: $tragh-orange;
     }
-    #right-side{
+    #right-side,
+    #description{
         background-color: $tragh-orange;
     }
 }
@@ -325,7 +437,8 @@ section#entrepreneur{
     h2{
         color: $tragh-green;
     }
-    #right-side{
+    #right-side,
+    #description{
         background-color: $tragh-green;
     }
 }
@@ -333,11 +446,20 @@ section#events{
     h2{
         color: $tragh-blue;
     }
-    #right-side{
+    #right-side,
+    #description{
         background-color: $tragh-blue;
     }
 }
+@include media-breakpoint-down(md){
+    .modal-body#trainer-modal{
+        column-count: 2 !important;
+    }
+}
 .modal-body{
+    &#trainer-modal{
+        column-count: 3;
+    }
     h6{
         font-size: ms(1);
         margin-left: -ms(1);
@@ -372,6 +494,14 @@ section#community{
         width: 100%;
     }
 }
+@include media-breakpoint-down(md){
+    section#about{
+        h1{
+            font-size: ms(6) !important;
+            color: $tragh-blue;
+        }
+    }
+}
 section#about{
     h1{
         font-size: ms(9);
@@ -383,6 +513,36 @@ section#about{
     #right-side{
         background-color: $tragh-blue;
     }
+}
+@include media-breakpoint-up(md){
+    section.philosophy-box{
+        #values{
+            columns: 2;
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    section.philosophy-box{
+        h1{
+            color: $tragh-orange;
+        }
+        h6{
+            font-style: ms(1) !important;
+            color: $tragh-orange;
+        }
+        h4{
+            font-weight: 700;
+        }
+        #values{
+            p{
+                font-size: ms(1);
+                font-weight: 200;
+            }
+        }
+    }
+}
+section#philosophy-mobile{
+    padding-top: 0px;
 }
 section.philosophy-box{
     h1,h2,h3{
@@ -408,13 +568,28 @@ section.philosophy-box{
         background-color: $tragh-orange;
     }
     #values{
-        columns: 2;
         p{
             font-size: ms(2);
             font-weight: 200;
         }
         i{
             font-style: normal;
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    section#contact{
+        h1{
+            font-size: ms(7) !important;
+        }
+        i{
+            font-style: normal;
+        }
+        a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: ms(-1);
+            color: black;
         }
     }
 }
@@ -433,6 +608,14 @@ section#contact{
             font-weight: 200;
             font-size: ms(0);
             color: black;
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    section#privacy{
+        h1{
+            font-size: ms(5) !important;
+            color: $tragh-orange;
         }
     }
 }
@@ -455,10 +638,21 @@ section#privacy{
         font-weight: 200;
     }
 }
+@include media-breakpoint-down(sm){
+    section#sitemap{
+        h1{
+            font-size: ms(5) !important;
+        }
+    }
+}
 section#sitemap{
     h1{
         font-size: ms(7);
         font-weight: 700;
+    }
+    a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
     }
     #left-side{
         color: white;

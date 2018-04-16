@@ -1,14 +1,53 @@
 <!-- SITEMAP
 ================================================== -->
-<section id="sitemap" class="hero d-flex align-items-center">
+<section id="sitemap" class="d-block d-lg-none">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="red-text wow fadeInLeft text-center mt-4">Mapa del Sitio</h1>
+        </div>
+        <div class="col-12 col-md-10">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-6 wow fadeIn mb-5">
+                    <h5 class="mb-3">General</h5>
+                    <div class="list-group">
+                        <a [routerLink]="['/inicio']" class="list-group-item list-group-item-action" title="tragh-sitio-web">Inicio</a>
+                        <a [routerLink]="['/comunidad']" class="list-group-item list-group-item-action" title="tragh-comunidad">Comunidad</a>
+                        <a [routerLink]="['/acerca']" class="list-group-item list-group-item-action" title="tragh-acerca">Acerca</a>
+                        <a [routerLink]="['/contacto']" class="list-group-item list-group-item-action" title="tragh-contacto">Contacto</a>
+                        <a [routerLink]="['/privacy']" class="list-group-item list-group-item-action" title="tragh-aviso-privacidad">Aviso de Privacidad</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 wow fadeIn mb-5">
+                    <h5 class="mb-3">Servicios</h5>
+                    <div class="list-group">
+                        <a [routerLink]="['/servicios','trainer']" class="list-group-item list-group-item-action" title="tragh-trainer">Trainer</a>
+                        <a [routerLink]="['/servicios','consultant']" class="list-group-item list-group-item-action" title="tragh-consultant">Consultant</a>
+                        <a [routerLink]="['/servicios','entrepreneur']" class="list-group-item list-group-item-action" title="tragh-entrepreneur">Entrepreneur</a>
+                        <a [routerLink]="['/servicios','events']" class="list-group-item list-group-item-action" title="tragh-events">Events</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 wow fadeIn mb-5">
+                    <h5 class="mb-3">Redes Sociales</h5>
+                    <div class="list-group">
+                        <a [href]="_is.info.facebook" class="list-group-item list-group-item-action" target="_blank" rel="external" title="tragh-facebook">Facebook</a>
+                        <a [href]="_is.info.twitter" class="list-group-item list-group-item-action" target="_blank" rel="external" title="tragh-twitter">Twitter</a>
+                        <a [href]="_is.info.instagram" class="list-group-item list-group-item-action" target="_blank" rel="external" title="tragh-instagram">Instagram</a>
+                        <a [href]="_is.info.youtube" class="list-group-item list-group-item-action" target="_blank" rel="external" title="tragh-youtube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sitemap" class="hero d-none d-lg-flex align-items-center">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-12 col-md-4 d-flex align-items-center" id="left-side">
+            <div class="col-md-4 d-flex align-items-center" id="left-side">
                 <h1 class="wow fadeInLeft">MAPA DEL SITIO</h1>
             </div>
-            <div class="col-12 col-md-8 d-flex align-items-center justify-content-center" id="right-side">
+            <div class="col-md-8 d-flex align-items-center justify-content-center">
                 <div class="row align-items-start">
-                    <div class="col-12 col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
                         <h5 class="mb-3">General</h5>
                         <div class="list-group">
                             <a [routerLink]="['/inicio']" class="list-group-item list-group-item-action" title="tragh-sitio-web">Inicio</a>
@@ -18,7 +57,7 @@
                             <a [routerLink]="['/privacy']" class="list-group-item list-group-item-action" title="tragh-aviso-privacidad">Aviso de Privacidad</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 wow fadeIn" data-wow-delay="1s">
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
                         <h5 class="mb-3">Servicios</h5>
                         <div class="list-group">
                             <a [routerLink]="['/servicios','trainer']" class="list-group-item list-group-item-action" title="tragh-trainer">Trainer</a>
@@ -27,7 +66,7 @@
                             <a [routerLink]="['/servicios','events']" class="list-group-item list-group-item-action" title="tragh-events">Events</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 wow fadeIn" data-wow-delay="1.5s">
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.7s">
                         <h5 class="mb-3">Redes Sociales</h5>
                         <div class="list-group">
                             <a [href]="_is.info.facebook" class="list-group-item list-group-item-action" target="_blank" rel="external" title="tragh-facebook">Facebook</a>

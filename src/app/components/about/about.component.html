@@ -1,19 +1,42 @@
 <!-- MISSION STATEMENT
 ================================================== -->
-<section id="about" class="hero d-flex align-items-center tragh-services">
+<section id="about" class="d-block d-lg-none tragh-services">
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <h1 class="mb-4 wow fadeInDown text-center">¿Quiénes Somos?</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h2 class="red-text wow fadeInLeft" data-wow-delay="0.1s">Misión</h2>
+            </div>
+            <div class="col-12 col-md-10">
+                <p class="text-justify wow fadeInUp" data-wow-delay="0.2s">Somos un grupo de especialistas dedicados a capacitar el talento humano de las empresas. Queremos que descubran su potencial oculto y rompan las barreras que impiden que lleguen a él.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h2 class="yellow-text text-right wow fadeInRight" data-wow-delay="0.3s">Visión</h2>
+            </div>
+            <div class="col-12 col-md-10">
+                <p class="text-justify wow fadeInUp" data-wow-delay="0.4s">Innovar la estructura actual de los modelos de capacitación que rigen a las empresas en México.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="d-none d-lg-flex tragh-services">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 col-md-7 px-5" id="left-side">
                 <div class="row justify-content-start mb-5">
                     <div class="col-12 col-md-8">
-                        <h2 class="red-text wow fadeInLeft" data-wow-delay="0.5s">MISIÓN</h2>
-                        <p class="text-justify wow fadeInUp" data-wow-delay="1s">SOMOS UN GRUPO DE ESPECIALISTAS DEDICADOS A CAPACITAR EL TALENTO HUMANO DE LAS EMPRESAS. QUEREMOS QUE DESCUBRAN SU POTENCIAL PCULTO Y ROMPAN LAS BARRERAS QUE IMPIDEN QUE LLEGUEN A ÉL.</p>
+                        <h2 class="red-text wow fadeInLeft" data-wow-delay="0.1s">MISIÓN</h2>
+                        <p class="text-justify wow fadeInUp" data-wow-delay="0.2s">SOMOS UN GRUPO DE ESPECIALISTAS DEDICADOS A CAPACITAR EL TALENTO HUMANO DE LAS EMPRESAS. QUEREMOS QUE DESCUBRAN SU POTENCIAL OCULTO Y ROMPAN LAS BARRERAS QUE IMPIDEN QUE LLEGUEN A ÉL.</p>
                     </div>
                 </div>
                 <div class="row justify-content-end">
                     <div class="col-12 col-md-8">
-                        <h2 class="yellow-text text-right wow fadeInRight" data-wow-delay="1.5s">VISIÓN</h2>
-                        <p class="text-justify wow fadeInUp" data-wow-delay="2s">INNOVAR LA ESTRUCTURA ACTUAL DE LOS MODELOS DE CAPACITACIÓN QUE RIGEN A LAS EMPRESAS EN MÉXICO.</p>
+                        <h2 class="yellow-text text-right wow fadeInRight" data-wow-delay="0.3s">VISIÓN</h2>
+                        <p class="text-justify wow fadeInUp" data-wow-delay="0.4s">INNOVAR LA ESTRUCTURA ACTUAL DE LOS MODELOS DE CAPACITACIÓN QUE RIGEN A LAS EMPRESAS EN MÉXICO.</p>
                     </div>
                 </div>
             </div>
@@ -22,7 +45,7 @@
                     <h1 class="mb-5 wow fadeInRight">¿Quiénes somos?</h1>
                     <div class="text-center">
                         <a pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" href="#philosophy">
-                            <button class="btn btn-tragh-outline btn-lg hvr-grow wow fadeInUp" data-wow-delay="2.5s">conoce más</button>
+                            <button class="btn btn-tragh-outline btn-lg hvr-grow wow fadeInUp" data-wow-delay="0.5s">conoce más</button>
                         </a>
                     </div>
                 </div>
@@ -34,16 +57,51 @@
 
 <!-- PHILOSOPHY
 ================================================== -->
-<section id="philosophy" class="hero d-flex align-items-center philosophy-box">
+<section id="philosophy-mobile" class="d-block d-lg-none philosophy-box">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="mb-4 wow fadeInDown text-center">Filosofía</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <p class="text-justify wow fadeInUp">Una destacada investigación para entender el contexto de nuestros clientes, tiene como consecuencia un <strong>excelente servicio personalizado.</strong></p>
+                <p class="text-justify wow fadeInUp">En Tragh creemos que en cada uno de nosotros existen talentos ocultos, solo necesitamos un guía para encontrar la manera de acceder a este talento de manera consciente. Este guía se encarga de mostrar que un conjunto de acciones bien dirigidas pueden desencadenar <strong>resultados asombrosos.</strong></p>
+            </div>
+            <div class="col-12 col-md-10">
+                <a [href]="_is.info.twitterHashtag" target="_blank" rel="external">
+                    <h6 class="mt-2 mb-5 wow zoomIn">#HAZLOASOMBROSO</h6>
+                </a>
+            </div>
+            <div class="col-12 col-md-10">
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item wow fadeIn" width="560" height="315" src="https://www.youtube.com/embed/AQYtRdblasg?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-12 col-md-10">
+                <h4 class="blue-text wow fadeInDown">Valores</h4>
+            </div>
+            <div class="col-12 col-md-10">
+                <div id="values">
+                    <p class="wow fadeInUp"><i class="fas fa-circle red-text"></i>&nbsp; Templanza</p>
+                    <p class="wow fadeInUp"><i class="fas fa-circle blue-text"></i>&nbsp; Autenticidad</p>
+                    <p class="wow fadeInUp"><i class="fas fa-circle yellow-text"></i>&nbsp; Responsibilidad</p>
+                    <p class="wow fadeInUp"><i class="fas fa-circle orange-text"></i>&nbsp; Gratitud</p>
+                    <p class="wow fadeInUp"><i class="fas fa-circle green-text"></i>&nbsp; Heroísmo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="philosophy" class="hero d-none d-lg-flex align-items-center philosophy-box">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 col-md-5 d-flex align-items-end px-5" id="left-side">
                 <div>
                     <h1 class="mb-3 wow fadeInDown">Filosofía</h1>
-                    <p class="text-justify wow fadeInUp" data-wow-delay="0.5s">Una destacada investigación para entender el contexto de nuestros clientes, tiene como consecuencia un <strong>excelente servicio personalizado.</strong></p>
-                    <p class="text-justify wow fadeInUp" data-wow-delay="1s">En Tragh creemos que en cada uno de nosotros existen talentos ocultos, solo necesitamos un guía para encontrar la manera de acceder a este talento de manera consciente. Este guía se encarga de mostrar que un conjunto de acciones bien dirigidas pueden desencadenar <strong>resultados asombrosos.</strong></p>
+                    <p class="text-justify wow fadeInUp" data-wow-delay="0.1s">Una destacada investigación para entender el contexto de nuestros clientes, tiene como consecuencia un <strong>excelente servicio personalizado.</strong></p>
+                    <p class="text-justify wow fadeInUp" data-wow-delay="0.2s">En Tragh creemos que en cada uno de nosotros existen talentos ocultos, solo necesitamos un guía para encontrar la manera de acceder a este talento de manera consciente. Este guía se encarga de mostrar que un conjunto de acciones bien dirigidas pueden desencadenar <strong>resultados asombrosos.</strong></p>
                     <a [href]="_is.info.twitterHashtag" target="_blank" rel="external">
-                        <h4 class="my-5 wow zoomIn" data-wow-delay="1.5s">#HAZLOASOMBROSO</h4>
+                        <h4 class="my-5 wow zoomIn" data-wow-delay="0.3s">#HAZLOASOMBROSO</h4>
                     </a>
                 </div>
             </div>
@@ -51,13 +109,13 @@
                 <div class="embed-responsive embed-responsive-16by9 mb-5">
                     <iframe class="embed-responsive-item wow fadeIn" width="560" height="315" src="https://www.youtube.com/embed/AQYtRdblasg?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
-                <h2 class="blue-text wow fadeInDown" data-wow-delay="3s">VALORES</h2>
+                <h2 class="blue-text wow fadeInDown" data-wow-delay="0.5s">VALORES</h2>
                 <div id="values">
-                    <p class="wow fadeInUp" data-wow-delay="3.5s"><i class="fas fa-circle red-text"></i>&nbsp; TEMPLANZA</p>
-                    <p class="wow fadeInUp" data-wow-delay="4s"><i class="fas fa-circle blue-text"></i>&nbsp; AUTENTICIDAD</p>
-                    <p class="wow fadeInUp" data-wow-delay="4.5s"><i class="fas fa-circle yellow-text"></i>&nbsp; RESPONSABILIDAD</p>
-                    <p class="wow fadeInUp" data-wow-delay="5s"><i class="fas fa-circle orange-text"></i>&nbsp; GRATITUD</p>
-                    <p class="wow fadeInUp" data-wow-delay="5.5s"><i class="fas fa-circle green-text"></i>&nbsp; HEROÍSMO</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.6s"><i class="fas fa-circle red-text"></i>&nbsp; TEMPLANZA</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.7s"><i class="fas fa-circle blue-text"></i>&nbsp; AUTENTICIDAD</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.8s"><i class="fas fa-circle yellow-text"></i>&nbsp; RESPONSABILIDAD</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.9s"><i class="fas fa-circle orange-text"></i>&nbsp; GRATITUD</p>
+                    <p class="wow fadeInUp" data-wow-delay="1s"><i class="fas fa-circle green-text"></i>&nbsp; HEROÍSMO</p>
                 </div>
             </div>
         </div>

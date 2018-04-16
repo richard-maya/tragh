@@ -3,7 +3,7 @@
 <footer>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
+            <div class="col-12 d-none d-md-block">
                 <ul class="list-inline text-center">
                     <a [routerLink]="['/inicio']">
                         <li class="list-inline-item mx-3">inicio</li>
@@ -49,12 +49,12 @@
             </div>
         </div>
 
-        <div class="row justify-content-between" id="copyright">
-            <div class="col-12 col-md-8">
-                <p><span>&copy;</span> {{ anio }} TRAGH. Todos los derechos reservados.</p>
+        <div class="row justify-content-center" id="copyright">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <p class="text-center text-md-left"><span>&copy;</span> {{ anio }} TRAGH. Todos los derechos reservados.</p>
             </div>
-            <div class="col-12 col-md-4">
-                <ul class="list-inline text-right">
+            <div class="col-12 col-md-6 order-1 order-md-2">
+                <ul class="list-inline text-center text-md-right">
                     <a [routerLink]="['/privacidad']">
                         <li class="list-inline-item">Aviso de Privacidad</li>
                     </a>

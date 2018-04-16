@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 // import * from "../../../assets/charjustify/jquery.charjustify.js";
 
 @Component({
@@ -6,20 +6,11 @@ import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
   templateUrl: './community.component.html',
   styles: []
 })
-export class CommunityComponent implements OnInit, AfterViewInit {
-
-    // titulo: any = document.getElementsByClassName('charjustify');
-
-    @ViewChild('charjustify') t1;
+export class CommunityComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-      // this.titulo.characterJustify();
-  }
-
-  ngAfterViewInit(){
-      this.t1.nativeElement.characterJustify();
   }
 
 }

@@ -23,7 +23,8 @@ const app_routes: Routes = [
   { path: 'contacto', component: ContactComponent },
   { path: 'privacidad', component: PrivacyComponent },
   { path: 'sitemap', component: SitemapComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'NotFoundComponent' }
+  { path: '404', component: NotFoundComponent },
+  { path: '**', pathMatch: 'full', redirectTo: '404' }
 ];
 
 export const app_routing = RouterModule.forRoot(app_routes);
