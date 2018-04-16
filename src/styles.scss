@@ -49,7 +49,8 @@ $footer-space: ms(1);
 ----------------------*/
 button.btn{
     // border-radius: 2rem;
-    font-family: 'Muller-Thin';
+    // font-family: 'Muller-Thin';
+    font-family: 'Montserrat', sans-serif;
     font-size: ms(2);
 
     &.not-allowed {
@@ -148,23 +149,21 @@ footer{
 
 /* HOME
 ----------------------*/
-.hexagon{
-    padding: $section-space;
-    background-color: $tragh-red;
-    width: 100%;
-
-    a h3{
+section#intro{
+    #left-side{
         color: white;
+        height: 100vh;
+        background-color: black;
     }
 }
 
 section#services{
     h2{
         font-size: ms(5);
-        font-weight: 200;
+        font-weight: 400;
     }
     a{
-        font-family: 'Muller-Thin';
+        font-family: 'Montserrat', sans-serif;
         color: black;
         font-size: ms(3);
     }
@@ -261,6 +260,25 @@ section#system{
                 }
             }
         }
+    }
+}
+
+section#hashtag{
+    h1{
+        // background-image: linear-gradient(to top, black, white);
+        // color:transparent;
+        // -webkit-background-clip: text;
+        // background-clip: text;
+        color: lighten(black, 20%);
+        @include transition(0.3s);
+        &:hover{
+            color: black;
+            letter-spacing: 0.15rem;
+            // @include transition(0.3s);
+        }
+    }
+    a:hover{
+        text-decoration: none;
     }
 }
 
@@ -416,5 +434,35 @@ section#contact{
             font-size: ms(0);
             color: black;
         }
+    }
+}
+section#privacy{
+    h1{
+        font-size: ms(7);
+        font-weight: 700;
+    }
+    #left-side{
+        color: white;
+        height: 100vh;
+        background-color: $tragh-orange;
+    }
+    p{
+        font-weight: 200;
+        font-size: ms(0);
+    }
+    li{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+}
+section#sitemap{
+    h1{
+        font-size: ms(7);
+        font-weight: 700;
+    }
+    #left-side{
+        color: white;
+        height: 100vh;
+        background-color: $tragh-red;
     }
 }

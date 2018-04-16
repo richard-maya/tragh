@@ -12,7 +12,7 @@ export class AppComponent{
 
   constructor(private wowService: NgwWowService, public _is:InfoService){
     this.wowService.init({
-        offset:       0,
+        offset:       50,
         mobile:       true
     });
 

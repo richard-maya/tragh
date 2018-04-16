@@ -6,7 +6,7 @@
             <div class="col-12 col-md-8" id="left-side">
                 <div class="row px-3">
                     <div class="col-12 col-md-8">
-                        <form>
+                        <form class="wow fadeIn" data-wow-delay="2s">
                             <div class="form-group">
                                 <label for="name">Nombre *</label>
                                 <input type="text" class="form-control" id="name" placeholder="">
@@ -32,30 +32,30 @@
             </div>
             <div class="col-12 col-md-4 d-flex align-items-end px-3 pb-5" id="right-side">
                 <div>
-                    <h1 class="mb-4">Contacto</h1>
+                    <h1 class="mb-4 wow fadeInDown">Contacto</h1>
                     <div class="row d-flex align-items-center">
                         <div class="col-md-3 text-center">
-                            <i class="fas fa-map-marker fa-3x"></i>
+                            <i class="fas fa-map-marker fa-3x wow fadeInLeft" data-wow-delay="0.5s"></i>
                         </div>
                         <div class="col-md-9">
-                            <a [href]="_is.info.map" target="_blank" rel="external">{{_is.info.address1}} <br>{{_is.info.address2}} <br>{{_is.info.zipCode}}, {{_is.info.country}}</a>
+                            <a [href]="_is.info.map" target="_blank" rel="external" class="wow fadeIn" data-wow-delay="0.5s">{{_is.info.address1}} <br>{{_is.info.address2}} <br>{{_is.info.zipCode}}, {{_is.info.country}}</a>
                         </div>
                     </div>
                     <div class="row d-flex align-items-center">
                         <div class="col-md-3 text-center">
-                            <i class="fas fa-envelope fa-3x"></i>
+                            <i class="fas fa-envelope fa-3x wow fadeInLeft" data-wow-delay="1s"></i>
                         </div>
                         <div class="col-md-9">
-                            <a href="mailto:{{ _is.info.email }}">{{ _is.info.email }}</a>
+                            <a href="mailto:{{ _is.info.email }}" class="wow fadeIn" data-wow-delay="1s">{{ _is.info.email }}</a>
                         </div>
                     </div>
                     <div class="row d-flex align-items-center">
                         <div class="col-md-3 text-center">
-                            <i class="fas fa-phone fa-3x"></i>
+                            <i class="fas fa-phone fa-3x wow fadeInLeft" data-wow-delay="1.5s"></i>
                         </div>
                         <div class="col-md-9">
-                            <a href="tel:{{_is.info.phone}}">{{_is.info.phone}}</a> <br>
-                            <a href="tel:{{_is.info.cel}}">{{_is.info.cel}}</a>
+                            <a href="tel:{{_is.info.phone}}" class="wow fadeIn" data-wow-delay="1.5s">{{_is.info.phone}}</a> <br>
+                            <a href="tel:{{_is.info.cel}}" class="wow fadeIn" data-wow-delay="1.5s">{{_is.info.cel}}</a>
                         </div>
                     </div>
                 </div>

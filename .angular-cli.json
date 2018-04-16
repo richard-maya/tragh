@@ -26,8 +26,7 @@
           "../node_modules/popper.js/dist/umd/popper.min.js",
           "../node_modules/bootstrap/dist/js/bootstrap.min.js",
           "../node_modules/wowjs/dist/wow.min.js",
-          "assets/charjustify/jquery.charjustify.js",
-          "assets/tragh.js"
+          "assets/charjustify/jquery.charjustify.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
