@@ -28,6 +28,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { SitemapComponent } from './components/sitemap/sitemap.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { EstoNoEsCoachingComponent } from './components/events/esto-no-es-coaching/esto-no-es-coaching.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PrivacyComponent,
     SitemapComponent,
     NotFoundComponent,
+    EstoNoEsCoachingComponent,
   ],
   imports: [
     BrowserModule,

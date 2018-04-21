@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { SitemapComponent } from './components/sitemap/sitemap.component';
+import { EstoNoEsCoachingComponent } from './components/events/esto-no-es-coaching/esto-no-es-coaching.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const app_routes: Routes = [
@@ -18,8 +19,9 @@ const app_routes: Routes = [
   { path: 'servicios/consultant', component: ConsultantComponent },
   { path: 'servicios/events', component: EventsComponent },
   { path: 'servicios/entrepreneur', component: EntrepreneurComponent },
+  { path: 'eventos/EstoNoEsCoaching', component: EstoNoEsCoachingComponent },
   { path: 'comunidad', component: CommunityComponent },
-  { path: 'acerca', component: AboutComponent },
+  { path: 'nosotros', component: AboutComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'privacidad', component: PrivacyComponent },
   { path: 'sitemap', component: SitemapComponent },
