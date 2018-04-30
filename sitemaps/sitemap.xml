@@ -4,7 +4,70 @@
   <url>
     <loc>https://tragh.mx/</loc>
     <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
   </url>
+  <url>
+    <loc>https://tragh.mx/inicio</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/servicios/trainer</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/servicios/consultant</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/servicios/entrepreneur</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/servicios/events</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/comunidad</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/acerca</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/contacto</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/privacy</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://tragh.mx/sitemap</loc>
+    <lastmod>2018-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+  </url>
+
 </urlset>
 <!--<guid value="c6d10370-26af-42dd-a1f5-f857d563d8ee" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

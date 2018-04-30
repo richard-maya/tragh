@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Allow: /sitemap.htm
 Sitemap: https://tragh.mx/sitemap.xml
