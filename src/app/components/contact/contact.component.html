@@ -30,63 +30,161 @@
                 <a href="tel:{{_is.info.cel}}" class="wow fadeIn" data-wow-delay="0.3s">{{_is.info.cel}}</a>
             </div>
         </div>
+
+
         <div class="row justify-content-center my-3">
             <div class="col-12 col-md-10">
-                <form class="wow fadeIn" data-wow-delay="1s">
+                <form class="wow fadeIn" data-wow-delay="1s" [formGroup]="formulario" (ngSubmit)="enviarMensaje()">
+                    <div class="row justify-content-center" *ngIf="mensajeEnviado">
+                        <div class="col-12">
+                            <div class="alert alert-success wow fadeInUp" role="alert">
+                                Tu mensaje ha sido enviado correctamente. En breve nos pondremos en contacto contigo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nombre -->
                     <div class="form-group">
                         <label for="name">Nombre *</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" id="name" placeholder="" formControlName="nombre" [ngClass]="{'is-invalid': !formulario.get('nombre').valid && formulario.get('nombre').touched}">
+                        <div *ngIf="formulario.get('nombre').errors?.required" class="invalid-feedback">
+                          El nombre es requerido.
+                        </div>
+                        <div *ngIf="formulario.get('nombre').errors?.minlength" class="invalid-feedback">
+                          Escribe un nombre válido.
+                        </div>
                     </div>
+
+                    <!-- Correo -->
                     <div class="form-group">
                         <label for="email">Correo *</label>
-                        <input type="email" class="form-control" id="email" placeholder="">
+                        <input type="email" class="form-control" id="email" placeholder="" formControlName="correo" [ngClass]="{'is-invalid': !formulario.get('correo').valid && formulario.get('correo').touched}">
+                        <div *ngIf="formulario.get('correo').errors?.required" class="invalid-feedback">
+                          El correo es requerido.
+                        </div>
+                        <div *ngIf="formulario.get('correo').errors?.pattern" class="invalid-feedback">
+                          Escribe un correo válido.
+                        </div>
                     </div>
+
+                    <!-- Teléfono -->
                     <div class="form-group">
-                        <label for="phone">Teléfono</label>
-                        <input type="phone" class="form-control" id="phone" placeholder="">
+                        <label for="phone">Teléfono *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="" formControlName="telefono" [ngClass]="{'is-invalid': !formulario.get('telefono').valid && formulario.get('telefono').touched}">
+                        <div *ngIf="formulario.get('telefono').errors?.required" class="invalid-feedback">
+                          El teléfono es requerido.
+                        </div>
+                        <div *ngIf="formulario.get('telefono').errors?.minlength" class="invalid-feedback">
+                          Escribe un número válido.
+                        </div>
                     </div>
+
+                    <!-- Mensaje -->
                     <div class="form-group">
                         <label for="message">Mensaje *</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <textarea class="form-control" id="message" rows="3" formControlName="mensaje" [ngClass]="{'is-invalid': !formulario.get('mensaje').valid && formulario.get('mensaje').touched}"></textarea>
+                        <div *ngIf="formulario.get('mensaje').errors?.required" class="invalid-feedback">
+                          El mensaje es requerido.
+                        </div>
+                        <div *ngIf="formulario.get('mensaje').errors?.minlength" class="invalid-feedback">
+                          Escribe un mensaje válido.
+                        </div>
                     </div>
+
+                    <!-- Date -->
+                    <input type="hidden" formControlName="fecha">
+
+                    <!-- Botón Enviar -->
                     <div class="row justify-content-end">
-                        <button type="submit" class="btn btn-tragh hvr-grow mr-3">Enviar</button>
+                        <button type="submit" class="btn btn-tragh hvr-grow mr-3" [disabled]="!formulario.valid" [ngClass]="{'not-allowed':!formulario.valid}">
+                            Enviar
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
+
 <section id="contact" class="hero d-none d-lg-flex align-items-center tragh-services">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 col-md-8" id="left-side">
                 <div class="row px-3">
                     <div class="col-12 col-md-8">
-                        <form class="wow fadeIn" data-wow-delay="1s">
+                        <form class="wow fadeIn" data-wow-delay="1s" [formGroup]="formulario" (ngSubmit)="enviarMensaje()">
+                            <div class="row justify-content-center" *ngIf="mensajeEnviado">
+                                <div class="col-md-9">
+                                    <div class="alert alert-success wow fadeInUp" role="alert">
+                                        Tu mensaje ha sido enviado correctamente. En breve nos pondremos en contacto contigo.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Nombre -->
                             <div class="form-group">
                                 <label for="name">Nombre *</label>
-                                <input type="text" class="form-control" id="name" placeholder="">
+                                <input type="text" class="form-control" id="name" placeholder="" formControlName="nombre" [ngClass]="{'is-invalid': !formulario.get('nombre').valid && formulario.get('nombre').touched}">
+                                <div *ngIf="formulario.get('nombre').errors?.required" class="invalid-feedback">
+                                  El nombre es requerido.
+                                </div>
+                                <div *ngIf="formulario.get('nombre').errors?.minlength" class="invalid-feedback">
+                                  Escribe un nombre válido.
+                                </div>
                             </div>
+
+                            <!-- Correo -->
                             <div class="form-group">
                                 <label for="email">Correo *</label>
-                                <input type="email" class="form-control" id="email" placeholder="">
+                                <input type="email" class="form-control" id="email" placeholder="" formControlName="correo" [ngClass]="{'is-invalid': !formulario.get('correo').valid && formulario.get('correo').touched}">
+                                <div *ngIf="formulario.get('correo').errors?.required" class="invalid-feedback">
+                                  El correo es requerido.
+                                </div>
+                                <div *ngIf="formulario.get('correo').errors?.pattern" class="invalid-feedback">
+                                  Escribe un correo válido.
+                                </div>
                             </div>
+
+                            <!-- Teléfono -->
                             <div class="form-group">
-                                <label for="phone">Teléfono</label>
-                                <input type="phone" class="form-control" id="phone" placeholder="">
+                                <label for="phone">Teléfono *</label>
+                                <input type="phone" class="form-control" id="phone" placeholder="" formControlName="telefono" [ngClass]="{'is-invalid': !formulario.get('telefono').valid && formulario.get('telefono').touched}">
+                                <div *ngIf="formulario.get('telefono').errors?.required" class="invalid-feedback">
+                                  El teléfono es requerido.
+                                </div>
+                                <div *ngIf="formulario.get('telefono').errors?.minlength" class="invalid-feedback">
+                                  Escribe un número válido.
+                                </div>
                             </div>
+
+                            <!-- Mensaje -->
                             <div class="form-group">
                                 <label for="message">Mensaje *</label>
-                                <textarea class="form-control" id="message" rows="3"></textarea>
+                                <textarea class="form-control" id="message" rows="3" formControlName="mensaje" [ngClass]="{'is-invalid': !formulario.get('mensaje').valid && formulario.get('mensaje').touched}"></textarea>
+                                <div *ngIf="formulario.get('mensaje').errors?.required" class="invalid-feedback">
+                                  El mensaje es requerido.
+                                </div>
+                                <div *ngIf="formulario.get('mensaje').errors?.minlength" class="invalid-feedback">
+                                  Escribe un mensaje válido.
+                                </div>
                             </div>
+
+                            <!-- Date -->
+                            <input type="hidden" formControlName="fecha">
+
+                            <!-- Botón Enviar -->
                             <div class="row justify-content-end">
-                                <button type="submit" class="btn btn-tragh hvr-grow mr-3">Enviar</button>
+                                <button type="submit" class="btn btn-tragh hvr-grow mr-3" [disabled]="!formulario.valid" [ngClass]="{'not-allowed':!formulario.valid}">
+                                    Enviar
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+
+
             <div class="col-12 col-md-4 d-flex align-items-end px-3 pb-5" id="right-side">
                 <div>
                     <h1 class="mb-4 wow fadeInDown">Contacto</h1>

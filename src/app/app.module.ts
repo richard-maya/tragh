@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // PlugIns
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -12,6 +13,7 @@ import { app_routing } from './app.routes';
 
 // Services
 import { InfoService } from './services/info.service';
+import { ContactoService } from './services/contacto.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -54,11 +56,14 @@ import { EstoNoEsCoachingComponent } from './components/events/esto-no-es-coachi
     HttpModule,
     Ng2PageScrollModule,
     app_routing,
+    FormsModule,
+    ReactiveFormsModule,
     NgwWowModule.forRoot(),
     NgbModule.forRoot()
   ],
   providers: [
-      InfoService
+      InfoService,
+      ContactoService
   ],
   bootstrap: [AppComponent]
 })
