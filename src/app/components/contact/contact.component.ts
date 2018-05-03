@@ -22,7 +22,7 @@ export class ContactComponent {
           'correo': new FormControl('', [Validators.required, Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")]),
           'mensaje': new FormControl('', [Validators.required, Validators.minLength(3)]),
           'fecha': new FormControl(this.fecha),
-          'visto': new FormControl('false')
+          'visto': new FormControl(false)
       })
   }
 
